@@ -24,7 +24,13 @@ type GuideDog struct {
  *Dog
 }
 
+type Human struct {}
+func (h *Human) Name(humanName string) string {
+ return humanName
+}
+
  // removed Help(h *Human) ??
+ // For some reason I can declare the method a string?
 func (gd *GuideDog) Help(humanName string) {
  fmt.Printf("Hey human %s, grab %s’s leash!\n", humanName, gd.Name())
 }
