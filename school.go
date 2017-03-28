@@ -8,7 +8,9 @@ import "fmt"
 // majors
 // sports
 // graduation
-
+// billing
+// students
+// teachers
 
 type School struct {
   Name string
